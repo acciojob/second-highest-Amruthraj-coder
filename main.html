@@ -10,6 +10,7 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let all
 			let l=arr.length;
 			if((l==1)||(l==0)){
 				return -Infinity;
@@ -28,7 +29,11 @@
 				}
 				
 			}
-			return y;
+			if(y==Number.MIN_SAFE_INTEGER;){return x;}
+			else{
+				return y;
+			}
+			
 		}
 
 		function Main() {
