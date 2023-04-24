@@ -14,14 +14,14 @@
 			if((l==1)||(l==0)){
 				return -Infinity;
 			}
-			let x=Number.MAX_SAFE_VALUE;
+			let x=Number.MIN_VALUE;
 			for(let i=0;i<arr.length;i++){
 				if(arr[i]>x){
 					x=arr[i]
 				}
 				
 			}
-			let y=Number.MAX_SAFE_VALUE;
+			let y=Number.MIN_VALUE;
 			for(let i=0;i<arr.length;i++){
 				if((arr[i]>y)&&arr[i]!=x){
 					y=arr[i]
